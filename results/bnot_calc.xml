@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="108" skipped="0" tests="123" time="0.494" timestamp="2023-06-04T11:09:05.137765" hostname="Zsombi"><testcase classname="test_bnot.TestBnot" name="test_input_int[1]" time="0.001"><failure message="AssertionError: ~1&#10;assert '1' == '-10'&#10;  - -10&#10;  + 1">self = &lt;test.test_bnot.TestBnot object at 0x000002580707AC50&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580705C7C0&gt;&gt;, a = 1
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1
+E       assert '1' == '-10'
+E         - -10
+E         + 1
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[2]" time="0.001"><failure message="AssertionError: ~10&#10;assert '10' == '-11'&#10;  - -11&#10;  + 10">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B3A0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293F400&gt;&gt;, a = 2
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~10
+E       assert '10' == '-11'
+E         - -11
+E         + 10
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[4]" time="0.001"><failure message="AssertionError: ~100&#10;assert '100' == '-101'&#10;  - -101&#10;  + 100">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B430&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A19180&gt;&gt;, a = 4
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~100
+E       assert '100' == '-101'
+E         - -101
+E         + 100
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[8]" time="0.001"><failure message="AssertionError: ~1000&#10;assert '1000' == '-1001'&#10;  - -1001&#10;  + 1000">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B4C0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E470&gt;&gt;, a = 8
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1000
+E       assert '1000' == '-1001'
+E         - -1001
+E         + 1000
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[16]" time="0.001"><failure message="AssertionError: ~10000&#10;assert '10000' == '-10001'&#10;  - -10001&#10;  + 10000">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B580&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1AA40&gt;&gt;, a = 16
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~10000
+E       assert '10000' == '-10001'
+E         - -10001
+E         + 10000
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[32]" time="0.001"><failure message="AssertionError: ~100000&#10;assert '100000' == '-100001'&#10;  - -100001&#10;  ? -     ^&#10;  + 100000&#10;  ?      ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B100&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E7D0&gt;&gt;, a = 32
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~100000
+E       assert '100000' == '-100001'
+E         - -100001
+E         ? -     ^
+E         + 100000
+E         ?      ^
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[64]" time="0.001"><failure message="AssertionError: ~1000000&#10;assert '1000000' == '-1000001'&#10;  - -1000001&#10;  ? -      ^&#10;  + 1000000&#10;  ?       ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B160&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1B040&gt;&gt;, a = 64
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1000000
+E       assert '1000000' == '-1000001'
+E         - -1000001
+E         ? -      ^
+E         + 1000000
+E         ?       ^
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_int[128]" time="0.001"><failure message="AssertionError: ~10000000&#10;assert '10000000' == '-10000001'&#10;  - -10000001&#10;  ? -       ^&#10;  + 10000000&#10;  ?        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B1F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E020&gt;&gt;, a = 128
+
+    @pytest.mark.key('int')
+    @pytest.mark.parametrize('a', [2**i for i in range(8)])
+    def test_input_int(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~10000000
+E       assert '10000000' == '-10000001'
+E         - -10000001
+E         ? -       ^
+E         + 10000000
+E         ?        ^
+
+test_bnot.py:16: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_input_float[0.0]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_float[7.16]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_float[20.83]" time="0.001" /><testcase classname="test_bnot.TestBnot" name="test_input_float[222.98]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_float[9901.34]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_float[71091.51]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_float[-7.99]" time="0.001" /><testcase classname="test_bnot.TestBnot" name="test_input_float[-59.8]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_float[-114.98]" time="0.001" /><testcase classname="test_bnot.TestBnot" name="test_input_float[-7332.39]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_str[8-7]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_str[93-52]" time="0.001" /><testcase classname="test_bnot.TestBnot" name="test_input_str[478-262]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_str[1232-2180]" time="0.000" /><testcase classname="test_bnot.TestBnot" name="test_input_str[33521-25698]" time="0.001" /><testcase classname="test_bnot.TestBnot" name="test_robustness[0]" time="0.001"><failure message="AssertionError: ~0&#10;assert '0' == '-1'&#10;  - -1&#10;  + 0">self = &lt;test.test_bnot.TestBnot object at 0x0000025807078550&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1B190&gt;&gt;, a = 0
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~0
+E       assert '0' == '-1'
+E         - -1
+E         + 0
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[270]" time="0.001"><failure message="AssertionError: ~100001110&#10;assert '100001110' == '-100001111'&#10;  - -100001111&#10;  ? -        ^&#10;  + 100001110&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807043370&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A41AE0&gt;&gt;, a = 270
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~100001110
+E       assert '100001110' == '-100001111'
+E         - -100001111
+E         ? -        ^
+E         + 100001110
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[284]" time="0.001"><failure message="AssertionError: ~100011100&#10;assert '100011100' == '-100011101'&#10;  - -100011101&#10;  ? -        ^&#10;  + 100011100&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042980&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293D330&gt;&gt;, a = 284
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~100011100
+E       assert '100011100' == '-100011101'
+E         - -100011101
+E         ? -        ^
+E         + 100011100
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[644]" time="0.001"><failure message="AssertionError: ~1010000100&#10;assert '1010000100' == '-1010000101'&#10;  - -1010000101&#10;  ? -         ^&#10;  + 1010000100&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042EF0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A43280&gt;&gt;, a = 644
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1010000100
+E       assert '1010000100' == '-1010000101'
+E         - -1010000101
+E         ? -         ^
+E         + 1010000100
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[475]" time="0.001"><failure message="AssertionError: ~111011011&#10;assert '111011011' == '-111011100'&#10;  - -111011100&#10;  + 111011011">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042A40&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293F970&gt;&gt;, a = 475
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~111011011
+E       assert '111011011' == '-111011100'
+E         - -111011100
+E         + 111011011
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[94]" time="0.001"><failure message="AssertionError: ~1011110&#10;assert '1011110' == '-1011111'&#10;  - -1011111&#10;  ? -      ^&#10;  + 1011110&#10;  ?       ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042B60&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025807041B10&gt;&gt;, a = 94
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1011110
+E       assert '1011110' == '-1011111'
+E         - -1011111
+E         ? -      ^
+E         + 1011110
+E         ?       ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[673]" time="0.001"><failure message="AssertionError: ~1010100001&#10;assert '1010100001' == '-1010100010'&#10;  - -1010100010&#10;  ? -         -&#10;  + 1010100001&#10;  ?         +">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042BF0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1AEF0&gt;&gt;, a = 673
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1010100001
+E       assert '1010100001' == '-1010100010'
+E         - -1010100010
+E         ? -         -
+E         + 1010100001
+E         ?         +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[749]" time="0.001"><failure message="AssertionError: ~1011101101&#10;assert '1011101101' == '-1011101110'&#10;  - -1011101110&#10;  ? -         -&#10;  + 1011101101&#10;  ?         +">self = &lt;test.test_bnot.TestBnot object at 0x00000258070429B0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A43940&gt;&gt;, a = 749
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1011101101
+E       assert '1011101101' == '-1011101110'
+E         - -1011101110
+E         ? -         -
+E         + 1011101101
+E         ?         +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[458]" time="0.001"><failure message="AssertionError: ~111001010&#10;assert '111001010' == '-111001011'&#10;  - -111001011&#10;  ? -        ^&#10;  + 111001010&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042770&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A19420&gt;&gt;, a = 458
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~111001010
+E       assert '111001010' == '-111001011'
+E         - -111001011
+E         ? -        ^
+E         + 111001010
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[491]" time="0.001"><failure message="AssertionError: ~111101011&#10;assert '111101011' == '-111101100'&#10;  - -111101100&#10;  + 111101011">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042920&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E8C0&gt;&gt;, a = 491
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~111101011
+E       assert '111101011' == '-111101100'
+E         - -111101100
+E         + 111101011
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[347]" time="0.001"><failure message="AssertionError: ~101011011&#10;assert '101011011' == '-101011100'&#10;  - -101011100&#10;  + 101011011">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042890&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1A920&gt;&gt;, a = 347
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~101011011
+E       assert '101011011' == '-101011100'
+E         - -101011100
+E         + 101011011
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[203]" time="0.001"><failure message="AssertionError: ~11001011&#10;assert '11001011' == '-11001100'&#10;  - -11001100&#10;  + 11001011">self = &lt;test.test_bnot.TestBnot object at 0x00000258070427D0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E890&gt;&gt;, a = 203
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~11001011
+E       assert '11001011' == '-11001100'
+E         - -11001100
+E         + 11001011
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[372]" time="0.001"><failure message="AssertionError: ~101110100&#10;assert '101110100' == '-101110101'&#10;  - -101110101&#10;  ? -        ^&#10;  + 101110100&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042680&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A18F40&gt;&gt;, a = 372
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~101110100
+E       assert '101110100' == '-101110101'
+E         - -101110101
+E         ? -        ^
+E         + 101110100
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[854]" time="0.001"><failure message="AssertionError: ~1101010110&#10;assert '1101010110' == '-1101010111'&#10;  - -1101010111&#10;  ? -         ^&#10;  + 1101010110&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042500&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E680&gt;&gt;, a = 854
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1101010110
+E       assert '1101010110' == '-1101010111'
+E         - -1101010111
+E         ? -         ^
+E         + 1101010110
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[797]" time="0.001"><failure message="AssertionError: ~1100011101&#10;assert '1100011101' == '-1100011110'&#10;  - -1100011110&#10;  ? -         -&#10;  + 1100011101&#10;  ?         +">self = &lt;test.test_bnot.TestBnot object at 0x0000025807042410&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A18A60&gt;&gt;, a = 797
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1100011101
+E       assert '1100011101' == '-1100011110'
+E         - -1100011110
+E         ? -         -
+E         + 1100011101
+E         ?         +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[143]" time="0.001"><failure message="AssertionError: ~10001111&#10;assert '10001111' == '-10010000'&#10;  - -10010000&#10;  + 10001111">self = &lt;test.test_bnot.TestBnot object at 0x00000258070423E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293F6A0&gt;&gt;, a = 143
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~10001111
+E       assert '10001111' == '-10010000'
+E         - -10010000
+E         + 10001111
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[754]" time="0.001"><failure message="AssertionError: ~1011110010&#10;assert '1011110010' == '-1011110011'&#10;  - -1011110011&#10;  ? -         ^&#10;  + 1011110010&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x00000258070422F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A18100&gt;&gt;, a = 754
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1011110010
+E       assert '1011110010' == '-1011110011'
+E         - -1011110011
+E         ? -         ^
+E         + 1011110010
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[41]" time="0.001"><failure message="AssertionError: ~101001&#10;assert '101001' == '-101010'&#10;  - -101010&#10;  ? -     -&#10;  + 101001&#10;  ?     +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F700&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E0E0&gt;&gt;, a = 41
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~101001
+E       assert '101001' == '-101010'
+E         - -101010
+E         ? -     -
+E         + 101001
+E         ?     +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[816]" time="0.001"><failure message="AssertionError: ~1100110000&#10;assert '1100110000' == '-1100110001'&#10;  - -1100110001&#10;  ? -         ^&#10;  + 1100110000&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D900&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1B6A0&gt;&gt;, a = 816
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1100110000
+E       assert '1100110000' == '-1100110001'
+E         - -1100110001
+E         ? -         ^
+E         + 1100110000
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[352]" time="0.001"><failure message="AssertionError: ~101100000&#10;assert '101100000' == '-101100001'&#10;  - -101100001&#10;  ? -        ^&#10;  + 101100000&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DA50&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A43460&gt;&gt;, a = 352
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~101100000
+E       assert '101100000' == '-101100001'
+E         - -101100001
+E         ? -        ^
+E         + 101100000
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[392]" time="0.001"><failure message="AssertionError: ~110001000&#10;assert '110001000' == '-110001001'&#10;  - -110001001&#10;  ? -        ^&#10;  + 110001000&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FFA0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A406A0&gt;&gt;, a = 392
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~110001000
+E       assert '110001000' == '-110001001'
+E         - -110001001
+E         ? -        ^
+E         + 110001000
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[748]" time="0.001"><failure message="AssertionError: ~1011101100&#10;assert '1011101100' == '-1011101101'&#10;  - -1011101101&#10;  ? -         ^&#10;  + 1011101100&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FF10&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A430D0&gt;&gt;, a = 748
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1011101100
+E       assert '1011101100' == '-1011101101'
+E         - -1011101101
+E         ? -         ^
+E         + 1011101100
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[916]" time="0.001"><failure message="AssertionError: ~1110010100&#10;assert '1110010100' == '-1110010101'&#10;  - -1110010101&#10;  ? -         ^&#10;  + 1110010100&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D060&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A69150&gt;&gt;, a = 916
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1110010100
+E       assert '1110010100' == '-1110010101'
+E         - -1110010101
+E         ? -         ^
+E         + 1110010100
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[288]" time="0.001"><failure message="AssertionError: ~100100000&#10;assert '100100000' == '-100100001'&#10;  - -100100001&#10;  ? -        ^&#10;  + 100100000&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D000&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A43A30&gt;&gt;, a = 288
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~100100000
+E       assert '100100000' == '-100100001'
+E         - -100100001
+E         ? -        ^
+E         + 100100000
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[594]" time="0.001"><failure message="AssertionError: ~1001010010&#10;assert '1001010010' == '-1001010011'&#10;  - -1001010011&#10;  ? -         ^&#10;  + 1001010010&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705CEB0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6AA10&gt;&gt;, a = 594
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1001010010
+E       assert '1001010010' == '-1001010011'
+E         - -1001010011
+E         ? -         ^
+E         + 1001010010
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[2070]" time="0.001"><failure message="AssertionError: ~11001111&#10;assert '11001111' == '-11010000'&#10;  - -11010000&#10;  + 11001111">self = &lt;test.test_bnot.TestBnot object at 0x000002580705CEE0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A40B20&gt;&gt;, a = 207
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~11001111
+E       assert '11001111' == '-11010000'
+E         - -11010000
+E         + 11001111
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[166]" time="0.001"><failure message="AssertionError: ~10100110&#10;assert '10100110' == '-10100111'&#10;  - -10100111&#10;  ? -       ^&#10;  + 10100110&#10;  ?        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FD90&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B010&gt;&gt;, a = 166
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~10100110
+E       assert '10100110' == '-10100111'
+E         - -10100111
+E         ? -       ^
+E         + 10100110
+E         ?        ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[421]" time="0.001"><failure message="AssertionError: ~110100101&#10;assert '110100101' == '-110100110'&#10;  - -110100110&#10;  ? -        -&#10;  + 110100101&#10;  ?        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FC10&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A40220&gt;&gt;, a = 421
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~110100101
+E       assert '110100101' == '-110100110'
+E         - -110100110
+E         ? -        -
+E         + 110100101
+E         ?        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[26]" time="0.001"><failure message="AssertionError: ~11010&#10;assert '11010' == '-11011'&#10;  - -11011&#10;  + 11010">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FBB0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6A080&gt;&gt;, a = 26
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~11010
+E       assert '11010' == '-11011'
+E         - -11011
+E         + 11010
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[2071]" time="0.001"><failure message="AssertionError: ~11001111&#10;assert '11001111' == '-11010000'&#10;  - -11010000&#10;  + 11001111">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F9D0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1BD30&gt;&gt;, a = 207
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~11001111
+E       assert '11001111' == '-11010000'
+E         - -11010000
+E         + 11001111
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[799]" time="0.001"><failure message="AssertionError: ~1100011111&#10;assert '1100011111' == '-1100100000'&#10;  - -1100100000&#10;  + 1100011111">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FAF0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A43820&gt;&gt;, a = 799
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1100011111
+E       assert '1100011111' == '-1100100000'
+E         - -1100100000
+E         + 1100011111
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[682]" time="0.001"><failure message="AssertionError: ~1010101010&#10;assert '1010101010' == '-1010101011'&#10;  - -1010101011&#10;  ? -         ^&#10;  + 1010101010&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FB80&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A19900&gt;&gt;, a = 682
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1010101010
+E       assert '1010101010' == '-1010101011'
+E         - -1010101011
+E         ? -         ^
+E         + 1010101010
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[353]" time="0.001"><failure message="AssertionError: ~101100001&#10;assert '101100001' == '-101100010'&#10;  - -101100010&#10;  ? -        -&#10;  + 101100001&#10;  ?        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FC70&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293F880&gt;&gt;, a = 353
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~101100001
+E       assert '101100001' == '-101100010'
+E         - -101100010
+E         ? -        -
+E         + 101100001
+E         ?        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[440]" time="0.001"><failure message="AssertionError: ~110111000&#10;assert '110111000' == '-110111001'&#10;  - -110111001&#10;  ? -        ^&#10;  + 110111000&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705FD60&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A183D0&gt;&gt;, a = 440
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~110111000
+E       assert '110111000' == '-110111001'
+E         - -110111001
+E         ? -        ^
+E         + 110111000
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[389]" time="0.001"><failure message="AssertionError: ~110000101&#10;assert '110000101' == '-110000110'&#10;  - -110000110&#10;  ? -        -&#10;  + 110000101&#10;  ?        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F400&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293DE10&gt;&gt;, a = 389
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~110000101
+E       assert '110000101' == '-110000110'
+E         - -110000110
+E         ? -        -
+E         + 110000101
+E         ?        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[608]" time="0.001"><failure message="AssertionError: ~1001100000&#10;assert '1001100000' == '-1001100001'&#10;  - -1001100001&#10;  ? -         ^&#10;  + 1001100000&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F430&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1AEF0&gt;&gt;, a = 608
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1001100000
+E       assert '1001100000' == '-1001100001'
+E         - -1001100001
+E         ? -         ^
+E         + 1001100000
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[922]" time="0.001"><failure message="AssertionError: ~1110011010&#10;assert '1110011010' == '-1110011011'&#10;  - -1110011011&#10;  ? -         ^&#10;  + 1110011010&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F2E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293D000&gt;&gt;, a = 922
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1110011010
+E       assert '1110011010' == '-1110011011'
+E         - -1110011011
+E         ? -         ^
+E         + 1110011010
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[811]" time="0.001"><failure message="AssertionError: ~1100101011&#10;assert '1100101011' == '-1100101100'&#10;  - -1100101100&#10;  ? -        ^^&#10;  + 1100101011&#10;  ?        + ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F160&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A190C0&gt;&gt;, a = 811
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1100101011
+E       assert '1100101011' == '-1100101100'
+E         - -1100101100
+E         ? -        ^^
+E         + 1100101011
+E         ?        + ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[795]" time="0.001"><failure message="AssertionError: ~1100011011&#10;assert '1100011011' == '-1100011100'&#10;  - -1100011100&#10;  ? -        ^^&#10;  + 1100011011&#10;  ?        + ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F1C0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293EEC0&gt;&gt;, a = 795
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1100011011
+E       assert '1100011011' == '-1100011100'
+E         - -1100011100
+E         ? -        ^^
+E         + 1100011011
+E         ?        + ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[21]" time="0.001"><failure message="AssertionError: ~10101&#10;assert '10101' == '-10110'&#10;  - -10110&#10;  + 10101">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F280&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A18D90&gt;&gt;, a = 21
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~10101
+E       assert '10101' == '-10110'
+E         - -10110
+E         + 10101
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[354]" time="0.001"><failure message="AssertionError: ~101100010&#10;assert '101100010' == '-101100011'&#10;  - -101100011&#10;  ? -        ^&#10;  + 101100010&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F340&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293F7F0&gt;&gt;, a = 354
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~101100010
+E       assert '101100010' == '-101100011'
+E         - -101100011
+E         ? -        ^
+E         + 101100010
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[488]" time="0.001"><failure message="AssertionError: ~111101000&#10;assert '111101000' == '-111101001'&#10;  - -111101001&#10;  ? -        ^&#10;  + 111101000&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F790&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A40400&gt;&gt;, a = 488
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~111101000
+E       assert '111101000' == '-111101001'
+E         - -111101001
+E         ? -        ^
+E         + 111101000
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[195]" time="0.001"><failure message="AssertionError: ~11000011&#10;assert '11000011' == '-11000100'&#10;  - -11000100&#10;  + 11000011">self = &lt;test.test_bnot.TestBnot object at 0x000002580705ED70&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A40250&gt;&gt;, a = 195
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~11000011
+E       assert '11000011' == '-11000100'
+E         - -11000100
+E         + 11000011
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[648]" time="0.001"><failure message="AssertionError: ~1010001000&#10;assert '1010001000' == '-1010001001'&#10;  - -1010001001&#10;  ? -         ^&#10;  + 1010001000&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F5E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A40160&gt;&gt;, a = 648
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1010001000
+E       assert '1010001000' == '-1010001001'
+E         - -1010001001
+E         ? -         ^
+E         + 1010001000
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[511]" time="0.001"><failure message="AssertionError: ~111111111&#10;assert '111111111' == '-1000000000'&#10;  - -1000000000&#10;  + 111111111">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F4F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A87610&gt;&gt;, a = 511
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~111111111
+E       assert '111111111' == '-1000000000'
+E         - -1000000000
+E         + 111111111
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[626]" time="0.001"><failure message="AssertionError: ~1001110010&#10;assert '1001110010' == '-1001110011'&#10;  - -1001110011&#10;  ? -         ^&#10;  + 1001110010&#10;  ?          ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EE90&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A18580&gt;&gt;, a = 626
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1001110010
+E       assert '1001110010' == '-1001110011'
+E         - -1001110011
+E         ? -         ^
+E         + 1001110010
+E         ?          ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[110]" time="0.001"><failure message="AssertionError: ~1101110&#10;assert '1101110' == '-1101111'&#10;  - -1101111&#10;  ? -      ^&#10;  + 1101110&#10;  ?       ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F910&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A84820&gt;&gt;, a = 110
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1101110
+E       assert '1101110' == '-1101111'
+E         - -1101111
+E         ? -      ^
+E         + 1101110
+E         ?       ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[238]" time="0.001"><failure message="AssertionError: ~11101110&#10;assert '11101110' == '-11101111'&#10;  - -11101111&#10;  ? -       ^&#10;  + 11101110&#10;  ?        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705ED10&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A40BB0&gt;&gt;, a = 238
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~11101110
+E       assert '11101110' == '-11101111'
+E         - -11101111
+E         ? -       ^
+E         + 11101110
+E         ?        ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[723]" time="0.001"><failure message="AssertionError: ~1011010011&#10;assert '1011010011' == '-1011010100'&#10;  - -1011010100&#10;  ? -        ^^&#10;  + 1011010011&#10;  ?        + ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705ECB0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A86920&gt;&gt;, a = 723
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1011010011
+E       assert '1011010011' == '-1011010100'
+E         - -1011010100
+E         ? -        ^^
+E         + 1011010011
+E         ?        + ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[446]" time="0.001"><failure message="AssertionError: ~110111110&#10;assert '110111110' == '-110111111'&#10;  - -110111111&#10;  ? -        ^&#10;  + 110111110&#10;  ?         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EB60&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A18190&gt;&gt;, a = 446
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~110111110
+E       assert '110111110' == '-110111111'
+E         - -110111111
+E         ? -        ^
+E         + 110111110
+E         ?         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[631]" time="0.001"><failure message="AssertionError: ~1001110111&#10;assert '1001110111' == '-1001111000'&#10;  - -1001111000&#10;  + 1001110111">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EA40&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A858A0&gt;&gt;, a = 631
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~1001110111
+E       assert '1001110111' == '-1001111000'
+E         - -1001111000
+E         + 1001110111
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-367]" time="0.001"><failure message="AssertionError: ~-101101111&#10;assert '-101101111' == '101101110'&#10;  - 101101110&#10;  ?         ^&#10;  + -101101111&#10;  ? +        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EB00&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6AAD0&gt;&gt;, a = -367
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-101101111
+E       assert '-101101111' == '101101110'
+E         - 101101110
+E         ?         ^
+E         + -101101111
+E         ? +        ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-195]" time="0.001"><failure message="AssertionError: ~-11000011&#10;assert '-11000011' == '11000010'&#10;  - 11000010&#10;  ?        ^&#10;  + -11000011&#10;  ? +       ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EBC0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A87DC0&gt;&gt;, a = -195
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-11000011
+E       assert '-11000011' == '11000010'
+E         - 11000010
+E         ?        ^
+E         + -11000011
+E         ? +       ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-974]" time="0.001"><failure message="AssertionError: ~-1111001110&#10;assert '-1111001110' == '1111001101'&#10;  - 1111001101&#10;  ?          -&#10;  + -1111001110&#10;  ? +        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EE60&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293D000&gt;&gt;, a = -974
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1111001110
+E       assert '-1111001110' == '1111001101'
+E         - 1111001101
+E         ?          -
+E         + -1111001110
+E         ? +        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-730]" time="0.001"><failure message="AssertionError: ~-1011011010&#10;assert '-1011011010' == '1011011001'&#10;  - 1011011001&#10;  ?          -&#10;  + -1011011010&#10;  ? +        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EDD0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A87D60&gt;&gt;, a = -730
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1011011010
+E       assert '-1011011010' == '1011011001'
+E         - 1011011001
+E         ?          -
+E         + -1011011010
+E         ? +        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-88]" time="0.001"><failure message="AssertionError: ~-1011000&#10;assert '-1011000' == '1010111'&#10;  - 1010111&#10;  + -1011000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EEF0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A42590&gt;&gt;, a = -88
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1011000
+E       assert '-1011000' == '1010111'
+E         - 1010111
+E         + -1011000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-505]" time="0.001"><failure message="AssertionError: ~-111111001&#10;assert '-111111001' == '111111000'&#10;  - 111111000&#10;  ?         ^&#10;  + -111111001&#10;  ? +        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705EF20&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A85E40&gt;&gt;, a = -505
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-111111001
+E       assert '-111111001' == '111111000'
+E         - 111111000
+E         ?         ^
+E         + -111111001
+E         ? +        ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-3280]" time="0.001"><failure message="AssertionError: ~-101001000&#10;assert '-101001000' == '101000111'&#10;  - 101000111&#10;  + -101001000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705ED40&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293E440&gt;&gt;, a = -328
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-101001000
+E       assert '-101001000' == '101000111'
+E         - 101000111
+E         + -101001000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-1180]" time="0.001"><failure message="AssertionError: ~-1110110&#10;assert '-1110110' == '1110101'&#10;  - 1110101&#10;  ?       -&#10;  + -1110110&#10;  ? +     +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F0D0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A87B80&gt;&gt;, a = -118
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1110110
+E       assert '-1110110' == '1110101'
+E         - 1110101
+E         ?       -
+E         + -1110110
+E         ? +     +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-157]" time="0.001"><failure message="AssertionError: ~-10011101&#10;assert '-10011101' == '10011100'&#10;  - 10011100&#10;  ?        ^&#10;  + -10011101&#10;  ? +       ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705F040&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293D600&gt;&gt;, a = -157
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-10011101
+E       assert '-10011101' == '10011100'
+E         - 10011100
+E         ?        ^
+E         + -10011101
+E         ? +       ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-577]" time="0.001"><failure message="AssertionError: ~-1001000001&#10;assert '-1001000001' == '1001000000'&#10;  - 1001000000&#10;  ?          ^&#10;  + -1001000001&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E500&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6AA70&gt;&gt;, a = -577
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1001000001
+E       assert '-1001000001' == '1001000000'
+E         - 1001000000
+E         ?          ^
+E         + -1001000001
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-517]" time="0.001"><failure message="AssertionError: ~-1000000101&#10;assert '-1000000101' == '1000000100'&#10;  - 1000000100&#10;  ?          ^&#10;  + -1000000101&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E530&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x000002580293EFB0&gt;&gt;, a = -517
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1000000101
+E       assert '-1000000101' == '1000000100'
+E         - 1000000100
+E         ?          ^
+E         + -1000000101
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-628]" time="0.001"><failure message="AssertionError: ~-1001110100&#10;assert '-1001110100' == '1001110011'&#10;  - 1001110011&#10;  ?         ^^&#10;  + -1001110100&#10;  ? +       + ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E3E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A85390&gt;&gt;, a = -628
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1001110100
+E       assert '-1001110100' == '1001110011'
+E         - 1001110011
+E         ?         ^^
+E         + -1001110100
+E         ? +       + ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-814]" time="0.001"><failure message="AssertionError: ~-1100101110&#10;assert '-1100101110' == '1100101101'&#10;  - 1100101101&#10;  ?          -&#10;  + -1100101110&#10;  ? +        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E2F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A85690&gt;&gt;, a = -814
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1100101110
+E       assert '-1100101110' == '1100101101'
+E         - 1100101101
+E         ?          -
+E         + -1100101110
+E         ? +        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-462]" time="0.001"><failure message="AssertionError: ~-111001110&#10;assert '-111001110' == '111001101'&#10;  - 111001101&#10;  ?         -&#10;  + -111001110&#10;  ? +       +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E260&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A86D70&gt;&gt;, a = -462
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-111001110
+E       assert '-111001110' == '111001101'
+E         - 111001101
+E         ?         -
+E         + -111001110
+E         ? +       +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-17]" time="0.001"><failure message="AssertionError: ~-10001&#10;assert '-10001' == '10000'&#10;  - 10000&#10;  + -10001">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E3B0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA3730&gt;&gt;, a = -17
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-10001
+E       assert '-10001' == '10000'
+E         - 10000
+E         + -10001
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-958]" time="0.001"><failure message="AssertionError: ~-1110111110&#10;assert '-1110111110' == '1110111101'&#10;  - 1110111101&#10;  ?          -&#10;  + -1110111110&#10;  ? +        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E440&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A41990&gt;&gt;, a = -958
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1110111110
+E       assert '-1110111110' == '1110111101'
+E         - 1110111101
+E         ?          -
+E         + -1110111110
+E         ? +        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-740]" time="0.001"><failure message="AssertionError: ~-1011100100&#10;assert '-1011100100' == '1011100011'&#10;  - 1011100011&#10;  ?         ^^&#10;  + -1011100100&#10;  ? +       + ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E680&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA3BB0&gt;&gt;, a = -740
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1011100100
+E       assert '-1011100100' == '1011100011'
+E         - 1011100011
+E         ?         ^^
+E         + -1011100100
+E         ? +       + ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-337]" time="0.001"><failure message="AssertionError: ~-101010001&#10;assert '-101010001' == '101010000'&#10;  - 101010000&#10;  ?         ^&#10;  + -101010001&#10;  ? +        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E6E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6A1D0&gt;&gt;, a = -337
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-101010001
+E       assert '-101010001' == '101010000'
+E         - 101010000
+E         ?         ^
+E         + -101010001
+E         ? +        ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-495]" time="0.002"><failure message="AssertionError: ~-111101111&#10;assert '-111101111' == '111101110'&#10;  - 111101110&#10;  ?         ^&#10;  + -111101111&#10;  ? +        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E770&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A84820&gt;&gt;, a = -495
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-111101111
+E       assert '-111101111' == '111101110'
+E         - 111101110
+E         ?         ^
+E         + -111101111
+E         ? +        ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-821]" time="0.001"><failure message="AssertionError: ~-1100110101&#10;assert '-1100110101' == '1100110100'&#10;  - 1100110100&#10;  ?          ^&#10;  + -1100110101&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E830&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B790&gt;&gt;, a = -821
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1100110101
+E       assert '-1100110101' == '1100110100'
+E         - 1100110100
+E         ?          ^
+E         + -1100110101
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-204]" time="0.001"><failure message="AssertionError: ~-11001100&#10;assert '-11001100' == '11001011'&#10;  - 11001011&#10;  + -11001100">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D750&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A868C0&gt;&gt;, a = -204
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-11001100
+E       assert '-11001100' == '11001011'
+E         - 11001011
+E         + -11001100
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-388]" time="0.001"><failure message="AssertionError: ~-110000100&#10;assert '-110000100' == '110000011'&#10;  - 110000011&#10;  + -110000100">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D660&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A69360&gt;&gt;, a = -388
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-110000100
+E       assert '-110000100' == '110000011'
+E         - 110000011
+E         + -110000100
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-792]" time="0.001"><failure message="AssertionError: ~-1100011000&#10;assert '-1100011000' == '1100010111'&#10;  - 1100010111&#10;  + -1100011000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D6F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A85CC0&gt;&gt;, a = -792
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1100011000
+E       assert '-1100011000' == '1100010111'
+E         - 1100010111
+E         + -1100011000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-456]" time="0.001"><failure message="AssertionError: ~-111001000&#10;assert '-111001000' == '111000111'&#10;  - 111000111&#10;  + -111001000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DCC0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6AE90&gt;&gt;, a = -456
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-111001000
+E       assert '-111001000' == '111000111'
+E         - 111000111
+E         + -111001000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-937]" time="0.001"><failure message="AssertionError: ~-1110101001&#10;assert '-1110101001' == '1110101000'&#10;  - 1110101000&#10;  ?          ^&#10;  + -1110101001&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DF30&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A69E70&gt;&gt;, a = -937
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1110101001
+E       assert '-1110101001' == '1110101000'
+E         - 1110101000
+E         ?          ^
+E         + -1110101001
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-745]" time="0.001"><failure message="AssertionError: ~-1011101001&#10;assert '-1011101001' == '1011101000'&#10;  - 1011101000&#10;  ?          ^&#10;  + -1011101001&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E980&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B190&gt;&gt;, a = -745
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1011101001
+E       assert '-1011101001' == '1011101000'
+E         - 1011101000
+E         ?          ^
+E         + -1011101001
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-816]" time="0.001"><failure message="AssertionError: ~-1100110000&#10;assert '-1100110000' == '1100101111'&#10;  - 1100101111&#10;  + -1100110000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E8F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B6D0&gt;&gt;, a = -816
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1100110000
+E       assert '-1100110000' == '1100101111'
+E         - 1100101111
+E         + -1100110000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-823]" time="0.001"><failure message="AssertionError: ~-1100110111&#10;assert '-1100110111' == '1100110110'&#10;  - 1100110110&#10;  ?          ^&#10;  + -1100110111&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580707B310&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA1F60&gt;&gt;, a = -823
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1100110111
+E       assert '-1100110111' == '1100110110'
+E         - 1100110110
+E         ?          ^
+E         + -1100110111
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-3281]" time="0.001"><failure message="AssertionError: ~-101001000&#10;assert '-101001000' == '101000111'&#10;  - 101000111&#10;  + -101001000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D3C0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B610&gt;&gt;, a = -328
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-101001000
+E       assert '-101001000' == '101000111'
+E         - 101000111
+E         + -101001000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-523]" time="0.001"><failure message="AssertionError: ~-1000001011&#10;assert '-1000001011' == '1000001010'&#10;  - 1000001010&#10;  ?          ^&#10;  + -1000001011&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D300&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA1F30&gt;&gt;, a = -523
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1000001011
+E       assert '-1000001011' == '1000001010'
+E         - 1000001010
+E         ?          ^
+E         + -1000001011
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-298]" time="0.001"><failure message="AssertionError: ~-100101010&#10;assert '-100101010' == '100101001'&#10;  - 100101001&#10;  ?         -&#10;  + -100101010&#10;  ? +       +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D180&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025807042B30&gt;&gt;, a = -298
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-100101010
+E       assert '-100101010' == '100101001'
+E         - 100101001
+E         ?         -
+E         + -100101010
+E         ? +       +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-599]" time="0.001"><failure message="AssertionError: ~-1001010111&#10;assert '-1001010111' == '1001010110'&#10;  - 1001010110&#10;  ?          ^&#10;  + -1001010111&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D0F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA2200&gt;&gt;, a = -599
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1001010111
+E       assert '-1001010111' == '1001010110'
+E         - 1001010110
+E         ?          ^
+E         + -1001010111
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-912]" time="0.001"><failure message="AssertionError: ~-1110010000&#10;assert '-1110010000' == '1110001111'&#10;  - 1110001111&#10;  + -1110010000">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D1E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B7C0&gt;&gt;, a = -912
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1110010000
+E       assert '-1110010000' == '1110001111'
+E         - 1110001111
+E         + -1110010000
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-931]" time="0.001"><failure message="AssertionError: ~-1110100011&#10;assert '-1110100011' == '1110100010'&#10;  - 1110100010&#10;  ?          ^&#10;  + -1110100011&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D2A0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A85360&gt;&gt;, a = -931
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1110100011
+E       assert '-1110100011' == '1110100010'
+E         - 1110100010
+E         ?          ^
+E         + -1110100011
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-725]" time="0.001"><failure message="AssertionError: ~-1011010101&#10;assert '-1011010101' == '1011010100'&#10;  - 1011010100&#10;  ?          ^&#10;  + -1011010101&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DE70&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA1960&gt;&gt;, a = -725
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1011010101
+E       assert '-1011010101' == '1011010100'
+E         - 1011010100
+E         ?          ^
+E         + -1011010101
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-965]" time="0.001"><failure message="AssertionError: ~-1111000101&#10;assert '-1111000101' == '1111000100'&#10;  - 1111000100&#10;  ?          ^&#10;  + -1111000101&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DED0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6AA10&gt;&gt;, a = -965
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1111000101
+E       assert '-1111000101' == '1111000100'
+E         - 1111000100
+E         ?          ^
+E         + -1111000101
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-124]" time="0.001"><failure message="AssertionError: ~-1111100&#10;assert '-1111100' == '1111011'&#10;  - 1111011&#10;  + -1111100">self = &lt;test.test_bnot.TestBnot object at 0x000002580705CA60&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6A020&gt;&gt;, a = -124
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1111100
+E       assert '-1111100' == '1111011'
+E         - 1111011
+E         + -1111100
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-183]" time="0.001"><failure message="AssertionError: ~-10110111&#10;assert '-10110111' == '10110110'&#10;  - 10110110&#10;  ?        ^&#10;  + -10110111&#10;  ? +       ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705C5B0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A6B130&gt;&gt;, a = -183
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-10110111
+E       assert '-10110111' == '10110110'
+E         - 10110110
+E         ?        ^
+E         + -10110111
+E         ? +       ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-19]" time="0.001"><failure message="AssertionError: ~-10011&#10;assert '-10011' == '10010'&#10;  - 10010&#10;  + -10011">self = &lt;test.test_bnot.TestBnot object at 0x000002580705E0B0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1F490&gt;&gt;, a = -19
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-10011
+E       assert '-10011' == '10010'
+E         - 10010
+E         + -10011
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-92]" time="0.001"><failure message="AssertionError: ~-1011100&#10;assert '-1011100' == '1011011'&#10;  - 1011011&#10;  + -1011100">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DF90&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A85210&gt;&gt;, a = -92
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1011100
+E       assert '-1011100' == '1011011'
+E         - 1011011
+E         + -1011100
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-47]" time="0.001"><failure message="AssertionError: ~-101111&#10;assert '-101111' == '101110'&#10;  - 101110&#10;  ?      ^&#10;  + -101111&#10;  ? +     ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705C3D0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A69900&gt;&gt;, a = -47
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-101111
+E       assert '-101111' == '101110'
+E         - 101110
+E         ?      ^
+E         + -101111
+E         ? +     ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-1181]" time="0.001"><failure message="AssertionError: ~-1110110&#10;assert '-1110110' == '1110101'&#10;  - 1110101&#10;  ?       -&#10;  + -1110110&#10;  ? +     +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705C2E0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A86230&gt;&gt;, a = -118
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1110110
+E       assert '-1110110' == '1110101'
+E         - 1110101
+E         ?       -
+E         + -1110110
+E         ? +     +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-2]" time="0.001"><failure message="AssertionError: ~-10&#10;assert '-10' == '1'&#10;  - 1&#10;  + -10">self = &lt;test.test_bnot.TestBnot object at 0x000002580705C130&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1DF60&gt;&gt;, a = -2
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-10
+E       assert '-10' == '1'
+E         - 1
+E         + -10
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-614]" time="0.001"><failure message="AssertionError: ~-1001100110&#10;assert '-1001100110' == '1001100101'&#10;  - 1001100101&#10;  ?          -&#10;  + -1001100110&#10;  ? +        +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DDE0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A84970&gt;&gt;, a = -614
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1001100110
+E       assert '-1001100110' == '1001100101'
+E         - 1001100101
+E         ?          -
+E         + -1001100110
+E         ? +        +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-571]" time="0.001"><failure message="AssertionError: ~-1000111011&#10;assert '-1000111011' == '1000111010'&#10;  - 1000111010&#10;  ?          ^&#10;  + -1000111011&#10;  ? +         ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DD50&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1E5F0&gt;&gt;, a = -571
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1000111011
+E       assert '-1000111011' == '1000111010'
+E         - 1000111010
+E         ?          ^
+E         + -1000111011
+E         ? +         ^
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-9]" time="0.001"><failure message="AssertionError: ~-1001&#10;assert '-1001' == '1000'&#10;  - 1000&#10;  + -1001">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D960&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA2BC0&gt;&gt;, a = -9
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-1001
+E       assert '-1001' == '1000'
+E         - 1000
+E         + -1001
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-438]" time="0.001"><failure message="AssertionError: ~-110110110&#10;assert '-110110110' == '110110101'&#10;  - 110110101&#10;  ?         -&#10;  + -110110110&#10;  ? +       +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DBD0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802A1F1F0&gt;&gt;, a = -438
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-110110110
+E       assert '-110110110' == '110110101'
+E         - 110110101
+E         ?         -
+E         + -110110110
+E         ? +       +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-310]" time="0.001"><failure message="AssertionError: ~-100110110&#10;assert '-100110110' == '100110101'&#10;  - 100110101&#10;  ?         -&#10;  + -100110110&#10;  ? +       +">self = &lt;test.test_bnot.TestBnot object at 0x000002580705DC60&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA1750&gt;&gt;, a = -310
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-100110110
+E       assert '-100110110' == '100110101'
+E         - 100110101
+E         ?         -
+E         + -100110110
+E         ? +       +
+
+test_bnot.py:37: AssertionError</failure></testcase><testcase classname="test_bnot.TestBnot" name="test_robustness[-379]" time="0.001"><failure message="AssertionError: ~-101111011&#10;assert '-101111011' == '101111010'&#10;  - 101111010&#10;  ?         ^&#10;  + -101111011&#10;  ? +        ^">self = &lt;test.test_bnot.TestBnot object at 0x000002580705D9F0&gt;, method = &lt;bound method Calculator.bnot of &lt;calculator.Calculator object at 0x0000025802AA1E10&gt;&gt;, a = -379
+
+    @pytest.mark.key('robust')
+    @pytest.mark.parametrize('a', tIG.robust_ints(case_num=100, negatives=True, zero=True))
+    def test_robustness(self, method, a):
+&gt;       assert self.bin(method(a)) == self.bin(~a), f'~{self.bin(a)}'
+E       AssertionError: ~-101111011
+E       assert '-101111011' == '101111010'
+E         - 101111010
+E         ?         ^
+E         + -101111011
+E         ? +        ^
+
+test_bnot.py:37: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="10" skipped="0" tests="423" time="0.702" timestamp="2023-06-04T11:48:22.220901" hostname="Zsombi"><testcase classname="test_bxor.TestBxor" name="test_input_int[85-1]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-2]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-4]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-8]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-16]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-32]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-64]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_int[85-128]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_float[0.0-0.0]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '0.0'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F67A0&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x00000132418111B0&gt;, a = 0.0, b = 0.0
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '0.0'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '0.0'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[6.16-9.53]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '6.16'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F63E0&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x0000013241811240&gt;, a = 6.16, b = 9.53
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '6.16'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '6.16'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[17.3-46.75]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '17.3'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6470&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x000001323D79E7A0&gt;, a = 17.3, b = 46.75
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '17.3'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '17.3'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[535.99-791.24]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '535.99'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6590&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x000001323D79E5F0&gt;, a = 535.99, b = 791.24
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '535.99'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '535.99'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[8887.08-3168.44]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '8887.08'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6620&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x000001323D79EA70&gt;, a = 8887.08, b = 3168.44
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '8887.08'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '8887.08'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[44362.04-19490.07]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '44362.04'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6980&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x00000132417C2F80&gt;, a = 44362.04, b = 19490.07
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '44362.04'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '44362.04'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[-5.06--9.46]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '-5.06'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6E30&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x0000013241810F70&gt;, a = -5.06, b = -9.46
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '-5.06'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '-5.06'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[-66.83--65.92]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '-66.83'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6DA0&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x0000013241811120&gt;, a = -66.83, b = -65.92
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '-66.83'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '-66.83'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[-564.72--151.55]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '-564.72'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6D10&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x000001323D79EE60&gt;, a = -564.72, b = -151.55
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '-564.72'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '-564.72'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_float[-6442.75--6464.81]" time="0.001"><failure message="ValueError: invalid literal for int() with base 10: '-6442.75'">self = &lt;test.test_bxor.TestBxor object at 0x00000132417F6B00&gt;, method = &lt;function method.&lt;locals&gt;._cmd at 0x000001323D79F6D0&gt;, a = -6442.75, b = -6464.81
+
+    @pytest.mark.key('float')
+    @pytest.mark.parametrize('a, b', list(zip(tIG.floats(negative=True, zero=True),
+                                              tIG.floats(negative=True, zero=True))))
+    def test_input_float(self, method, a, b):
+        with pytest.raises(TypeError) as exc:
+&gt;           method(a)
+
+test_bxor.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+conftest.py:69: in _cmd
+    calc.onecmd(cmd)
+C:\Users\zsomb\AppData\Local\Programs\Python\Python310\lib\cmd.py:217: in onecmd
+    return func(arg)
+..\icalc.py:47: in do_bit_xor
+    print(self.cal.bxor(*parse(arg)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+arg = '-6442.75'
+
+    def parse(arg):
+        'Convert a series of zero or more numbers to an argument tuple'
+&gt;       return tuple(map(int, arg.split()))
+E       ValueError: invalid literal for int() with base 10: '-6442.75'
+
+..\icalc.py:67: ValueError</failure></testcase><testcase classname="test_bxor.TestBxor" name="test_input_str[7-9]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_str[98-72]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_str[282-187]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_str[2806-9565]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_input_str[52261-71698]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-737]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[0--732]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877-386]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--830]" time="0.002" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--302]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[877--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--475]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[85--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--845]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--500]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--475]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--302]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[802--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-833]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--845]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[738--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[418-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--500]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[418--732]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-737]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-833]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--845]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[209--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-737]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514-386]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--845]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--475]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[514--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-833]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599-386]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--302]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[599--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[932-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--302]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[932--732]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--500]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--126]" time="0.002" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--475]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--302]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[312--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-983]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-833]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--302]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5160--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266-386]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--845]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-266--732]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-0]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-737]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806-386]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-806--732]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-833]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--830]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--500]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--475]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-616--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-833]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--498]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--500]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--126]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--475]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-32--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-205]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-737]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-826]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--500]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--751]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-5161--732]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-737]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778-386]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--845]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-778--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-975]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-774]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-186]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-103]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-597--732]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-0]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-205]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-975]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-774]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-983]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-737]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-186]" time="0.001" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-833]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-826]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-103]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199-386]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--830]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--845]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--498]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--500]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--126]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--751]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--475]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--302]" time="0.000" /><testcase classname="test_bxor.TestBxor" name="test_robust[-199--732]" time="0.001" /></testsuite></testsuites>

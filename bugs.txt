@@ -1,0 +1,297 @@
+Found bugs during testing Calculator and InteractiveCalculator classes
+
+	
+==========================================================================================================================================
+
+bugs in calculator.py -> Calculator class
+note: each 'steps to reproduce bug' description assumes that initial step is executed:
+	  - calc = Calculator() # initialization of class
+	  
+
+1. "add" method
+Problem:
+	Add operator not convert the input string to int, just add the strings.
+
+Test steps:
+	- result = calc.add(num1, num2) # num1 and num 2 = string
+
+Expected result:
+	- Connvert string to int and do the operation
+	
+Test log:
+	- 
+	
+	
+==========================================================================================================================================
+
+2. "bshl" method:
+Problem:
+	the method is shifting the number to the right and not left
+
+Test steps:
+	- result = calc.bshl(num, sh_num) # num = any integer, sh_num = any positive integer
+
+Expected result:
+	- result == num << sh_num
+	
+Measured result:
+	- result == num >> sh_num
+	
+Test log:	
+		- calc_bshl.xml -> 'test_input_int' and 'test_input_robustness' testcases
+	- indication of 'bit shift right' behavior is clearly observable in the 'test_input_int' part
+	
+==========================================================================================================================================
+
+3. "bshr" method:
+Problem: 
+	opposite of bug no 2.: the method is shifting the number to the left and not right
+	
+Test steps:
+	- result = calc.bshr(num, sh_num) # num = any integer, sh_num = any positive integer
+	
+Expected result:
+	- result == num >> sh_num
+	
+Measured result:
+	- result == num << sh_num
+	
+Test log:	
+	- calc_bshr.xml -> 'test_input_int' and 'test_input_robustness' testcases
+	- indication of 'bit shift left' behavior is clearly observable in the 'test_input_int' part
+	
+==========================================================================================================================================
+
+4. 'checksum' method:
+Problem: 
+	Regardless of the input, the method returns with 0. The CRC cannot be zero. 
+
+Test steps:
+	- result = calc.checksum(num) # num = any positive integer
+	
+Expected result:
+	- result != 0
+	
+Measured result:
+	- result == 0
+	
+Test log:	
+	- calc_checksum.xml -> 'test_input_int' and 'test_input_robustness' testcases
+	
+==========================================================================================================================================
+
+5. 'checksum' method
+Problem: 
+	Checksum method not checking the input number.
+	
+Test steps:
+	- calc.checksum(num) # num = any negative integer or positive or negative float
+	
+Expected result:
+	- TypeError raised
+	
+Measured result:
+	- TypeError not raised
+	
+Test log:	
+	- calc_checksum.xml -> 'test_negatives' and 'test_input_float' testcases
+	
+==========================================================================================================================================
+
+6. "bnot" method.
+
+Problem:
+	the method gives back the input value
+
+Test steps:
+	- result = calc.bnot(num) # num = any integer
+
+Expected result:
+	- result == ~num
+	
+Measured result:
+	- result == num
+	
+Test log:	
+	- calc_bnot.xml -> 'test_input_int' and 'test_input_robustness' testcases
+
+
+7.'mul' method:
+Problem: 
+	return value of method randomly deviates from expected result
+	
+Test steps:
+	- result = calc.mul(num1, num2) # num1, num2 = any float or integer
+	- repeat execution multiple times
+	
+Expected result:
+	- result == num1 * num2
+	- result is correct at each repetition
+	
+Measured result:
+	- most of the times: result == num1 * num2
+	- sometimes, randomly: result != num1 * num2
+	
+Test log:	
+	- calc_mul.xml -> all available testcases
+	
+==========================================================================================================================================
+
+bugs in icalc.py -> InteractiveCalculator class
+note: each 'steps to reproduce bug' description assumes that initial step is executed:
+	  - calc = InteractiveCalculator() # initialization of class
+	  - cmd = 'method arguments-separated-by-whitespace' # create the input string that will be sent to calc
+	  
+1. InteractiveCalculator
+Problem:
+	common bug, affecting the InteractiveCalculator itself. The calculator cannot handle float inputs, it is general, occurs for each method.
+	
+Test steps:
+	- cmd = 'method float1 float2' # method can be all the different methods used in the calculator
+	
+Expected result:
+	- Exception is not raised
+	
+Measured result:
+	- ValueError raised:
+			- exception status: "invalid literal for int() with base 10: float" # float value is from the input cmd
+Test log:	
+	- all icalc_[...].xml -> 'test_input_float' testcases and 'test_robustness' testcases where at least one of the inputs is float
+	
+	
+==========================================================================================================================================
+
+2.'bit_not' method:
+Problem:
+	- similar to 'bnot' bug (no 1.) in Calculator class, return value of the method is the input value
+	
+Test steps:
+	- cmd = 'bit_not num' # num = any integer
+	
+Expected result:
+	- result == ~num
+	
+Measured result:
+	- result == num
+	
+Test log:	
+	- icalc_bnot.xml -> 'test_input_int' and 'test_robustness' testcases
+	
+==========================================================================================================================================
+
+3. 'bit_or' method:
+Problem:
+	- method does not return result
+	
+Test steps:
+	- cmd = 'bit_or num1 num2' # num1, num2 = any integer
+	
+Expected result:
+	- result == num1 | num2
+	
+Measured result:
+	- result is None
+	
+Test log:	
+	- icalc_bor.xml -> 'test_input_int' and 'test_robustness' testcases
+	
+==========================================================================================================================================
+
+4. 'bit_shift_right' method:
+Problem:
+	- method is inorrectly implemented, variables/arguments used for methods are wrongly used or wrongly defined
+	
+Test steps:
+	- cmd = 'bit_shit_right num sh_num': # num = any integer, sh_num = any positive integer
+	
+Expected result:
+	- Exception is not raised
+	
+Measured result:
+	- NameError raised 
+	- exception status: "name 'arg' is not defined"
+	
+Test log:	
+	- icalc_bshr.xml -> all testcases
+	
+==========================================================================================================================================
+
+5. 'checksum' method:
+Problem:
+	- method is not implemented in the InteractiveCalculator
+	
+Test steps:
+	- cmd = 'Help' or '?'
+	
+Expected result:
+	- 'checksum' or other CRC name is present in the output
+	
+Measured result:
+	- 'checksum' is not present
+	
+==========================================================================================================================================
+
+6. 'div' method:
+Problem:
+	- return value of method is actually return value of 'rem' method
+	
+Test steps:
+	- cmd = 'div num1 num2' # num1 any integer, num2 any non-zero integer
+	
+Expected result:
+	- result == num1 / num2
+	
+Measured result:
+	- result == num1 % num2
+	
+Test log:	
+	- icalc_div.xml -> 'test_input_int' and 'test_robustness' testcases
+	
+==========================================================================================================================================
+
+7. 'rem' method:
+Problem:
+	- exact opposite of bug no 6.: return value of method is actually return value of 'div' method
+	
+Test steps:
+	- cmd = 'rem num1 num2' # num1 any integer, num2 any non-zero integer
+	
+Expected result:
+	- result == num1 % num2
+	
+Measured result:
+	- result == num1 / num2
+	
+Test log:	
+	- icalc_rem.xml -> 'test_input_int' and 'test_robustness' testcases
+	
+==========================================================================================================================================
+
+8. 'mul' method:
+Problem:
+	- see no 6. bug at Calculator. Potentially the same bug occurs in InteractiveCalculator as well
+	
+Test log:	
+	- icalc_mul.xml -> all testcases (note: hard to evalaute log due to common float bug in InteractiveCalculator)
+	
+==========================================================================================================================================
+
+9.'sqrt' method:
+Problem:
+	- method tries to use the 'sub' method instead of 'sqrt'
+	
+Test steps:
+	- cmd = 'sqrt num' # num = any positive integer
+	
+Expected result:
+	- Exception is not raised
+	
+Measured result:
+	- TypeError raised 
+	- exception status: " sub() missing 1 required positional argument: 'b'"
+	
+Test log:	
+	- icalc_sqrt.xml -> all testcases
+	
+==========================================================================================================================================
+
